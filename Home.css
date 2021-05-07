@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+   
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    widows: 2000px;
+   
+  }
+  div.hero::before{
+    background:url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover;
+    position: absolute;
+    content: "";
+    width: 1600px;
+    height: 1400px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  p,h4,h3{
+    color: yellow;
+   
+    text-align: center;
+  }
+  h1{
+color: rgb(231, 0, 0);
+text-align: center;
+text-decoration: underline;
+text-shadow: -100px 100px 50px yellow;
+animation-name: hello;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+
+animation-play-state: running;
+  }
+  @keyframes hello {
+    from{
+      width: 800px;
+
+    }
+    to{
+      width: 1800px;
+    }
+  }
+  h5{
+    color: purple;
+    
+    font-style: italic;
+  }
+  .one{
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 8px;
+     color:yellow;
+     box-shadow:10px 10px 10px 5px red;
+  }
+  .two{
+    color: white; 
+    border: 2px solid green;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:10px 10px 10px 5px rgb(8, 240, 46);
+
+  }
+  .hrr1,.hrr3,.hrr5{
+    color: darkblue;
+   background-color: darkblue;
+    height: 6px;
+    padding-bottom: 20px;
+    box-shadow:10px 10px 10px 5px red;
+
+  }
+  .hrr2,.hrr4{
+    color: darkblue;
+   background-color: darkgoldenrod;
+    height: 6px;
+    padding-bottom: 2opx;
+    box-shadow:10px 10px 10px 5px rgb(8, 240, 46);
+}
+.one:hover{
+transform: scale(1);
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+
+background-color: black;
+size: 2px;
+margin: 20px;
+text-size-adjust: 2px;
+
+}
+.two:hover{
+transform: scale(1);
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+color: red;
+background-color:yellow;
+size: 2px;
+margin: 20px;
+text-size-adjust: 2px;
+
+}
+.ftext{
+    color: white;
+  }
+  .footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
