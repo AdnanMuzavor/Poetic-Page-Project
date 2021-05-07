@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+section{
+    display: flex;
+    height: 120vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left,rgb(14, 12, 12),rgb(44, 44, 134));
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+.content{
+    width: 500px;
+    height: 300px;
+    
+}
+.butti{
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-left: 200px;
+    padding-right: 230px;
+    color: red;
+    background: linear-gradient(to right, rgb(213, 1, 255),purple);
+    transform: translateY(-108%);
+transition: all 3s;
+}
+
+.butti:hover{
+    background: linear-gradient(to right,purple ,rgb(213, 1, 255));
+}  
+.poems{
+    width: 500px;
+    height: 300px;
+    
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 1.2px red;
+    color: maroon;
+    background-color: yellow;
+    transition: all 2s;
+    transform: translateY(-100%);
+}
+h1:hover{
+    transform: skew(2);
+    background: maroon;
+    color: yellow;
+}
+#yourps{
+    display: none;
+    transform: translateY(-10%);
+    background: linear-gradient( to left, rgb(255, 166, 0),yellow);
+    padding: 5px;
+    margin: 5px;
+   
+}
+#yourps:hover{
+background: linear-gradient(to right,yellow,rgb(201, 87, 87));
+animation-name:ani ;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+
+}
+#yourps:hover h1{
+    transform: translateY(50%);
+}
+@keyframes ani {
+    0%{
+        background: linear-gradient(to right,rgb(81, 255, 0),rgb(2, 166, 241));
+       
+    }
+    25%{
+        background: linear-gradient(to right,rgb(252, 252, 0),rgb(255, 0, 0));
+    }
+    50%{
+        background: linear-gradient(to right,rgb(255, 145, 0),rgb(201, 87, 87));
+    }
+    75%{
+        background: linear-gradient(to right,rgb(248, 2, 215),rgb(234, 0, 255));
+    }
+    100%{
+        background: linear-gradient(to right,rgb(116, 0, 248),rgb(80, 3, 3));
+    }
+}
+.contentL h1,.contentR h1{
+    transform: translateY(-8%);
+}
+.contentL,.contentR,.contentT{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    border: 2px solid red;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contentL{
+    transform: translateY(-101%);
+    transition: all 3s;
+    background: linear-gradient(to left,rgb(81, 255, 0),rgb(255, 0, 76));
+    opacity: 0;
+}
+.contentR{
+    transform: translateY(-101%);
+    transition: all 3s;
+   background: linear-gradient(to left,rgb(0, 255, 255),rgb(0, 0, 250));
+   opacity: 0;
+}
+.poems:hover .contentL{
+    transform: translate(-100%,-101%);
+    opacity: 1;
+}
+
+.poems:hover .contentR{
+    transform: translate(100%,-101%);
+    opacity: 1;
+}
+.header{
+    transform: translateY(-20%);
+}
+.contentT{
+    transform: translateY(-101%);
+    transition: all 3s;
+    opacity: 0;
+    color: white;
+    background: linear-gradient(to left,rgb(116, 19, 19),rgb(7, 7, 71));
+}
+.poems:hover .contentT{
+    transform: translateY(-201%);
+    opacity: 1;
+}
+.ftext{
+        color: white;
+      }
+      .footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <section>
+    <div class="container">
+        <div class="poems">
+           
+        <img src="nature3.jpg">
+      
+        <div class="contentL">
+
+            <h1>Lorem ipsum dolor sit amet.?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eveniet vel corrupti totam, iure ducimus obcaecati magni. Commodi incidunt vitae architecto repudiandae magni velit eum sint reprehenderit cupiditate. Veritatis, reiciendis corporis. Velit ipsam quae eaque cumque alias blanditiis voluptatem excepturi eos repudiandae quisquam nihil, odio possimus laudantium quasi unde harum!</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ratione atque eligendi? Beatae explicabo aliquam dolor, rerum repellendus porro exercitationem, delectus saepe molestias aut, repellat consectetur perferendis inventore impedit magni esse. Incidunt, quis et recusandae odio aperiam, voluptas, aliquam iure omnis nostrum soluta odit repellendus placeat asperiores pariatur nesciunt molestiae. Veniam officia illo aut.
+            </p>
+        </div>
+
+        <div class="contentT">
+
+            <h1 class="header">WHAT DO WE DO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eveniet vel corrupti totam, iure ducimus obcaecati magni. Commodi incidunt vitae architecto repudiandae magni velit eum sint reprehenderit cupiditate. Veritatis, reiciendis corporis. Velit ipsam quae eaque cumque alias blanditiis voluptatem excepturi eos repudiandae quisquam nihil, odio possimus laudantium quasi unde harum!</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ratione atque eligendi? Beatae explicabo aliquam dolor, rerum repellendus porro exercitationem, delectus saepe molestias aut, repellat consectetur perferendis inventore impedit magni esse. Incidunt, quis et recusandae odio aperiam, voluptas, aliquam iure omnis nostrum soluta odit repellendus placeat asperiores pariatur nesciunt molestiae. Veniam officia illo aut.
+            </p>
+        </div>
+
+         <div class="contentR"> <h1>Lorem ipsum dolor sit amet.?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eveniet vel corrupti totam, iure ducimus obcaecati magni. Commodi incidunt vitae architecto repudiandae magni velit eum sint reprehenderit cupiditate. Veritatis, reiciendis corporis. Velit ipsam quae eaque cumque alias blanditiis voluptatem excepturi eos repudiandae quisquam nihil, odio possimus laudantium quasi unde harum!</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil fugiat doloribus ullam, ab consectetur fuga, pariatur culpa sit harum ex fugit possimus excepturi laborum voluptate alias exercitationem enim magni. Rerum eos sint voluptatem enim  accusantium, atque et blanditiis delectus sapiente dicta vel. Rem iste veritatis adipisci esse odit unde quos nostrum exercitationem repellendus. Aperiam veritatis dolor eum ratione aut, odio quaerat numquam saepe molestias.
+        </p></div>
+        <div class="content">
+        <h1>WHAT ALL THINGS DO WE DO?</h1>
+  <p id="yourps">hii Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore eaque distinctio ab nihil impedit unde vitae sunt doloremque, ipsum, repellendus vero laborum illo possimus quam repudiandae magni, molestiae veritatis repellat velit enim corrupti <br>quas accusantium! Dolorum quod similique voluptate ab tempora quas quaerat architecto autem? Cumque modi sequi odio eos. Deleniti qui rem hic sapiente sit voluptatum minima, ad doloremque neque eveniet tempore nam blanditiis nihil fugiat quam optio, porro labore rerum eum necessitatibus nulla voluptate cupiditate beatae nobis. Aut labore dolorem veritatis tempore inventore, facere ducimus enim, officiis at <br>nobis odio dolor nihil vel eum. Dolorem, placeat non! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis corporis debitis, eaque culpa quaerat quae dolore. Debitis similique porro dolorum.
+      </p>
+      <button id="btn" class="butti" onclick="button()">CLICK ME!</button>
+    </div>
+<h1>SENSITIVE AREA</h1>
+</div>
+ </div>
+
+ <script>
+     function button(){
+     let btn=document.getElementById('btn');
+     let yourps=document.getElementById('yourps');
+     if(yourps.style.display!='none'){
+        yourps.style.display='none';
+        btn.style.transition="all 1s";
+         btn.style.transform="translateY(-100%)";
+       
+     }
+     else {
+        
+
+         yourps.style.display='block';
+         btn.style.transition="all 1s";
+         btn.style.transform="translateY(5%)";
+     }
+ 
+ 
+ 
+     }
+
+</script>
+</section>
+<hr>
+<footer class="footer">
+   <ul>
+     <li><a href="#">Facebook</a></li>
+     <li><a href="#">Instagram</a></li>
+     <li><a href="#">Twitter</a></li>
+     <li> <p class="ftext">Page created by a student developer 2021.</p></li>
+   </ul>
+   <hr>
+  </footer>
+</body>
+</html>

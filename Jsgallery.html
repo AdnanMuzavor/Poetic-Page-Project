@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+
+    }
+    h1::before{
+     
+        background: url('https://source.unsplash.com/random/1600x900,nature') no-repeat center center/cover;
+        position: absolute;
+        content: "";
+        width: 100%;
+        left: -0%;
+        height: 110px;
+        z-index: -1;
+        opacity: 0.5;
+ 
+    }
+    h1{
+        width: 100%;
+        height:80px ;
+  color: red;
+        animation-name: anim2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes anim2 {
+        0%{
+            width: 680px;
+        }
+        50%{
+            width: 1800px;
+        }
+        100%{
+            width: 680px;
+        }
+    }
+    body{
+        height: 110vh;
+        text-align: center;
+        margin-bottom: 20PX;
+        background: linear-gradient(to left, rgb(0, 0, 0),rgb(0, 0, 0));
+    }
+    .imp{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        top:60%;
+        left: 35%;
+position: absolute;
+background: linear-gradient(to left, rgb(192, 87, 87),darkgreen);
+    }
+    img{
+        width: 500px;
+        height: 300px;
+        box-shadow: 2px 3px 4px 5px rgb(47, 0, 255);
+      padding: 5px;
+    }
+    #side1,#side2,#side3,#side4,#side5,#side6,#side7,#side8,#side9{
+     
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        transition: all 3s;
+        opacity: 0;
+        box-shadow: 2px 3px 4px 5px rgb(47, 0, 255);
+    }
+     #center:hover #side1{
+transition: all 2s;
+transform: translateY(-610px);
+z-index: 1;
+opacity: 1;
+    }
+    #center:hover #side2{
+transition: all 2s;
+transform: translateY(0px);
+z-index: 1;
+opacity: 1;
+    }
+
+    #center:hover #side3{
+transition: all 2s;
+transform: translate(-510px,-610px);
+z-index: 1;
+opacity: 1;
+
+    }
+
+    #center:hover #side4{
+transition: all 2s;
+transform: translateX(-510px);
+z-index: 1;
+opacity: 1;
+
+    }
+    #center:hover #side5{
+transition: all 2s;
+transform: translate(-510px,-305px);
+z-index: 1;
+opacity: 1;
+    }
+    #center:hover #side6{
+transition: all 2s;
+transform: translate(510px,-305px);
+z-index: 1;
+opacity: 1;
+    }
+    #center:hover #side7{
+transition: all 2s;
+transform: translate(510px,-610px);
+z-index: 1;
+opacity: 1;
+    }
+    #center:hover #side8{
+transition: all 2s;
+transform: translate(510px,-305px);
+z-index: 1;
+opacity: 1;
+    }
+    #center:hover #side9{
+transition: all 2s;
+transform: translateX(510px);
+z-index: 1;
+opacity: 1;
+    }
+   .para{
+       width: 500px;
+       height: 300px;
+       position: absolute;
+       top: 2%;
+       color: black;
+       text-align: center;
+       padding: 20px;
+       padding-top: 60px;
+       justify-content: center;
+       color: red;
+       background-color: yellow;
+       opacity: 0.5;
+       left: 1%;
+       animation-name: anim1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+z-index: 2;
+   }
+   #side5 .para,#side8 .para{
+       opacity: 0;
+   }
+   #side5:hover .para,#side8:hover .para{
+       opacity: 0.8;
+       animation-name: anim1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: black;
+   }
+#left1,#right1,#left2,#right2{
+    opacity: 0;
+    color: black;
+}
+
+.button{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: 2px solid red;
+    opacity: 0;
+}
+#side1:hover #hd,#side2:hover #hd{
+    opacity: 0.5;
+    animation-name: anim1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#hd{
+    opacity: 0;
+   
+
+}
+#btn{
+    transition: all 1s;
+margin-top: 100px;
+    opacity: 0;
+    z-index: 3;
+}
+#side1:hover .button,#side1:hover #btn{
+    transition: all 1s;
+    transform: translate(-300px,55px);
+    opacity: 1;
+    z-index: 3;
+}
+@keyframes anim {
+    from{
+        width: 100px;
+        height: 100px;
+    }
+    to{
+        width: 500px;
+        height: 300px;
+    }
+    
+}
+
+.button{
+    border-radius: 50px;
+    border: 6px solid red;
+    background: linear-gradient(to right,green,orange);
+    animation-name: anim1;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim1 {
+    0%{
+        background: linear-gradient(to right,green,orange);
+    }
+25%{
+    background: linear-gradient(to right,rgb(0, 255, 0),rgb(110, 72, 0));
+}
+
+50%{
+    background: linear-gradient(to right,rgb(255, 0, 0),rgb(255, 0, 191));
+}
+75%{
+    background: linear-gradient(to right,rgb(89, 0, 255),rgb(255, 166, 0));
+}
+100%{
+    background: linear-gradient(to right,rgb(0, 195, 255),rgb(0, 255, 0));
+}
+    
+}
+.ftext{
+        color: white;
+      }
+      .footer{
+        justify-content: center;
+        margin-top: 1000px;
+        align-items: center;
+        text-align: center;
+      }
+      .hr{
+          color: white;
+      }
+</style>
+<body>
+    <section>
+    <h1>Hey,Wish to see our photo gallery?<br>JUST HOVER THE IMAGE AND BOOM!!!!<br>DON'T FORGET TO HOVER SUB-IMAGES</h1>
+<br>
+<br>
+<hr>
+    <div class="imp">
+      
+    <div id="main">
+        <div id="center">
+            <img src="nature2.jpg">
+            <div id="side1"> <img src="nature6.jpg" >
+                <button class="button" onclick="left()" >PROCEED</button>
+                <button class="button" id="btn" onclick="aleft()" >REWIND</button>
+                <h2  id="hd" class="para"   ></h2><p id="left1" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis, praesentium error ullam in nostrum tempora amet porro mollitia enim ratione ipsa neque consequatur modi minus laborum alias voluptatem doloribus saepe itaque vel sint? Quod incidunt quae esse? Officia, porro placeat eum temporibus eius, autem dolore ea natus tempora quas optio perferendis quibusdam consequatur. Culpa quia blanditiis nostrum debitis mollitia quisquam amet vel doloribus quasi obcaecati. Ipsam ex laboriosam in doloribus? Deserunt in voluptate at soluta, odio expedita magni nulla?</p><p class="para" id="right1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis, praesentium error ullam in nostrum tempora amet porro mollitia enim ratione ipsa neque consequatur modi minus laborum alias voluptatem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia repellendus voluptatem eaque impedit. Ad, mollitia nobis voluptatem nulla qui excepturi.doloribus saepe itaque vel sint? Quod incidunt quae esse? Officia, porro placeat eum temporibus eius, autem dolore ea natus tempora quas optio perferendis quibusdam consequatur. Culpa quia blanditiis nostrum debitis mollitia quisquam amet vel doloribus quasi obcaecati. Ipsam ex laboriosam in doloribus? Deserunt in voluptate at soluta, odio expedita magni nulla?</p></div>
+
+
+            <div id="side2">  <img  src="nature4.jpg">
+                
+                <button class="button" onclick="left()" ></button>
+                <button class="button" id="btn" onclick="aleft()" >REWIND</button>
+                
+                <h2 class="para" id="hd"   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius eos voluptatem quia itaque magnam rerum eum cumque praesentium mollitia.</h2> </div>
+            <div id="side3"><img src="nature5.jpg">  </div>
+            <div id="side4">  <img src="nature6.jpg"></div>
+            <div id="side5"> <img src="nature1.jpg"> <h2 class="para"></h2><p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis, praesentium error ullam in nostrum tempora amet porro mollitia enim ratione ipsa neque consequatur modi minus laborum alias voluptatem doloribus saepe itaque vel sint? Quod incidunt quae esse? Officia, porro placeat eum temporibus eius, autem dolore ea natus tempora quas optio perferendis quibusdam consequatur. Culpa quia blanditiis nostrum debitis mollitia quisquam amet vel doloribus quasi obcaecati. Ipsam ex laboriosam in doloribus? Deserunt in voluptate at soluta, odio expedita magni nulla?</p></div>
+            <div id="side6"> <img src="nature2.jpg"></div>
+            <div id="side7"><img src="nature3.jpg"> </div>
+            <div id="side8"> <img src="nature4.jpg"><h2 class="para"></h2><p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis, praesentium error ullam in nostrum tempora amet porro mollitia enim ratione ipsa neque consequatur modi minus laborum alias voluptatem doloribus saepe itaque vel sint? Quod incidunt quae esse? Officia, porro placeat eum temporibus eius, autem dolore ea natus tempora quas optio perferendis quibusdam consequatur. Culpa quia blanditiis nostrum debitis mollitia quisquam amet vel doloribus quasi obcaecati. Ipsam ex laboriosam in doloribus? Deserunt in voluptate at soluta, odio expedita magni nulla?</p></div>
+            <div id="side9"> <img src="nature3.jpg"></div>
+        </div>
+    </div></div>
+    <hr>
+    <script>
+       
+       function left(){
+document.getElementById("left1").style.transform="translate(-515px,-10px)";
+document.getElementById("left1").style.opacity="1";
+document.getElementById("side3").style.zIndex="0";
+document.getElementById("right1").style.transform="translate(508px,-5px)";
+document.getElementById("right1").style.opacity="1";
+document.getElementById("side7").style.zIndex="0";
+ }
+
+
+function aleft(){
+    document.getElementById("left1").style.transform="translateX(0px)";
+    document.getElementById("right1").style.transform="translateX(0px)"; 
+    document.getElementById("side3").style.zIndex="1"; 
+    document.getElementById("left1").style.opacity="0";
+  //  document.getElementById("hd").style.opacity="0";
+    document.getElementById("side7").style.zIndex="1"; 
+    document.getElementById("left1").style.opacity="0";
+    document.getElementById("right1").style.opacity="0"; 
+    document.getElementById("right1").style.opacity="0";
+}
+
+    </script></section>
+      <hr class="hr">
+      <footer class="footer">
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li> <p class="ftext">Page created by a student developer 2021.</p></li>
+        </ul>
+        <hr>
+       </footer>
+</body>
+</html>
